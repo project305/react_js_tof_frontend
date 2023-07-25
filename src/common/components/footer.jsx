@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <Container>
       <Row>
-        <Col></Col>
-        <Col></Col>
-        <Col></Col>
+        <Col>Footer1</Col>
+        <Col>Footer2</Col>
+        <Col>Footer3</Col>
       </Row>
     </Container>
   );
