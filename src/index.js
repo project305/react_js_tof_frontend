@@ -4,12 +4,12 @@ import App from "./App";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { ErrorBoundary } from "react-error-boundary";
 import { IndexRouter } from "./router";
-import HomePage from "./modules/home/home-page";
 import "bootstrap/dist/css/bootstrap.min.css";
+import HomePage from "./modules/home/pages/home-page";
 // import ErrorHandler from "./common/components/error-handler";
 
 const router = createBrowserRouter([
-  { path: "/", element: <HomePage /> },
+//   { path: "/", element: <HomePage /> },
   ...IndexRouter,
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));

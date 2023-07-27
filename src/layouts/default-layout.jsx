@@ -9,12 +9,12 @@ const DefaultLayout = ({ props }) => {
   return (
     <div>
       <NavigationBar />
-      <Container style={{ top: "100px", position: "absolute" }}>
+      <div className="w-100" style={{ top: "100px", position: "absolute" }}>
         <Suspense fallback={<p>Loading.....</p>}>
           <Outlet></Outlet>
         </Suspense>
-      </Container>
-      <Footer/>
+      </div>
+      <Footer />
     </div>
   );
 };
