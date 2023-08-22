@@ -7,15 +7,18 @@ import Footer from "../common/components/footer";
 const DefaultLayout = ({ props }) => {
   console.log("props", props);
   return (
-    <div>
+    <>
       <NavigationBar />
       <div className="w-100" style={{ top: "100px", position: "absolute" }}>
-        <Suspense fallback={<p>Loading.....</p>}>
-          <Outlet></Outlet>
-        </Suspense>
+        <div className="h-100">
+          <Suspense fallback={<p>Loading.....</p>}>
+            <Outlet></Outlet>
+          </Suspense>
+        </div>
+
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 

@@ -7,10 +7,10 @@ import GlobalSearch from "./global-search";
 import useRedirect from "../custom-hooks/useRedirect";
 
 const NavigationBar = () => {
-    const redirectTo = useRedirect();
+  const redirectTo = useRedirect();
   const [show, setShow] = useState(false);
   const [activeNavItem, setActiveNavItem] = useState("Home");
-  //   useEffect(() => {}, []);
+    // useEffect(() => {}, []);
   const offCanvasShowControler = () => {
     if (isMobile) {
       setShow(!show);
